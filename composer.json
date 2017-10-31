@@ -1,0 +1,29 @@
+{
+    "name": "mobily-ws/api",
+    "type": "library",
+    "description": "Mobily-api is the PHP library for sending sms through internet ",
+    "keywords": ["mobily","mobily.ws","sms", "api"],
+    "homepage": "http://mobily.ws/",
+    "minimum-stability":"dev",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mobily.ws",
+            "email": "info@mobily.ws"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url":  "git://github.com/mobily-ws/api/blob/master/MobilySms.php"
+        }
+    ]
+    ,
+    "autoload": {
+        "files": ["MobilySms.php"]
+    }
+
+}
