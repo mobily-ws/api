@@ -130,8 +130,3 @@ The PHP library documentation can be found **[`here`](http://www.mobily.ws/)**.
 If you need help installing or using the library, please contact Mobily.ws Support at **help@mobily.ws** first. mobily Support staff are well-versed in all of the mobily.ws Helper Libraries, and usually reply within 24 hours.
 
 If you've instead found a bug in the library or would like new features added, go ahead and open issues or pull requests against this repo!
-# api
-# api
-# api
-# api
-# api
