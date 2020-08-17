@@ -1,4 +1,6 @@
 <?php
+namespace MobilySMS;
+
 class MobilySms {
     public $userName;
     public $password;
@@ -258,13 +260,14 @@ class MobilySms {
         if(empty($this->error)) {
             $numbers = explode(',',$numbers);
             $data = array(
-				'numbers'=>$numbers,
+		'numbers'=>$numbers,
                 'sender'=>$sender,
                 'msg'=>$message,
                 'timeSend'=>$timeSend,
                 'dateSend'=>$dateSend,
                 'notRepeat'=>$notRepeat,
                 'deleteKey'=>$deleteKey,
+		'applicationType'=>'68',
                 'lang'=>'3'
             );
             $this->json = array_merge($this->json, $data);
