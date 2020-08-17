@@ -1,5 +1,5 @@
 <?php
-namespace MobilySMS;
+namespace Mobily;
 
 class MobilySms {
     public $userName;
