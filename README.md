@@ -52,6 +52,7 @@ We provide many services that make it easy to use the api, and these are some ou
 You can  send SMS messages using the transmission gate to ensure the privacy of information and the speed of sending and ensure they arrive, and this portal provid the ability to sending messages to many numbers at once and without any effortless and tired, is the gate to send and receive messages using JSON technology And These an example of how to use the portal:
 ```php
 <?php
+//use MobilySMS
 require_once('MobilySms.php');
 $sms = new MobilySms('user name','password','ApiKEY');
 $result=$sms->sendMsg('This is Message','9662222222222,9662222222222,9662222222222','NEW SMS','17:30:00','12/30/2017',1,'deleteKey','curl');
@@ -64,6 +65,7 @@ This portal offers the ability to send SMS messages using a unified message temp
 
 ```php
 <?php
+//use MobilySMS
 require_once('MobilySms.php');
 $sms = new MobilySms('user name','password','ApiKEY');
 $msg = "Welcome (1)، Your subscription date is up to (2)";
@@ -78,6 +80,7 @@ $result=$sms->sendMsgWK($msg,$numbers,'aljauoni',$msgKey,'12:00:00','12/27/2017'
 You can inquire about mobily account balance through this portal by adding mobile number or Api KEY , this portal sends and returns JSON data and the following example shows how to use this portal :
 ```php
 <?php
+//use MobilySMS
 require_once('MobilySms.php');
 $sms = new MobilySms('user name','password','ApiKEY');
 $result=$sms->balance('curl');
@@ -88,6 +91,7 @@ $result=$sms->balance('curl');
 You can retrieve the mobily account password through this portal by adding the mobile number or Api KEY to retrieve its password and the way to send the password either on the mobile number or on the email of the account, and this portal sends and returns data from JSON Type The following example shows how to use this portal:
 ```php
 <?php
+//use MobilySMS
 require_once('MobilySms.php');
 // you must insert just user name or ApiKEY
 $sms = new MobilySms('user name','password','ApiKEY');
@@ -104,6 +108,7 @@ $result=$sms->forgetPassword(2,'ar','curl');
 You can change the password for mobily account through this portal by adding the mobile number or Api KEY to change its password and old and new password, and this portal sends and returns data of type JSON. , And as an example of the required data:
 ```php
 <?php
+//use MobilySMS
 require_once('MobilySms.php');
 $sms = new MobilySms('user name','password','ApiKEY');
 $result=$sms->changePassword('111','123','curl');
